@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Misti</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="curtain-left" id="curtainL"></div>
+<div class="curtain-right" id="curtainR"></div>
+<div class="confetti-container" id="confettiBox"></div>
+
+<nav class="nav-bar" id="navBar">
+  <button class="nav-btn" id="prevBtn" onclick="changeSection(-1)" disabled>Back</button>
+  <div class="section-dots" id="dotsRow"></div>
+  <button class="nav-btn next-btn" id="nextBtn" onclick="changeSection(1)">Next</button>
+</nav>
+
+<!-- S1 -->
+<section class="section active" id="s1">
+  <div class="opening-content">
+    <div class="birthday-tag">Happy Birthday</div>
+    <div class="misti-name">Misti</div>
+    <div style="height:1.5rem"></div>
+    <div class="poem-box">
+      <div class="poem-line">She sleeps like the world owes her rest,</div>
+      <div class="poem-line">tops every class, still looks her best.</div>
+      <div class="poem-line italic">A boss who naps through half the day,</div>
+      <div class="poem-line italic">then wakes to slay in every way.</div>
+      <div class="poem-line" style="margin-top:.7rem">She parties hard, she studies harder,</div>
+      <div class="poem-line">all-rounder girl, an absolute charmer.</div>
+      <div class="poem-line italic">Funny, bold, a little loud —</div>
+      <div class="poem-line italic">got trapped with boring friends, poor crowd.</div>
+      <div class="poem-line sweet" style="margin-top:.7rem">Sweet by name, and sweet by soul,</div>
+      <div class="poem-line sweet">Misti — you make every moment whole.</div>
+      <div class="poem-line" style="margin-top:.9rem;font-size:.82rem;color:var(--text-light);font-style:italic;text-align:center">Walk through this little world we made for you.</div>
+    </div>
+  </div>
+</section>
+
+<!-- S2 -->
+<section class="section" id="s2">
+  <div class="section-title">How it all began</div>
+  <div class="section-subtitle">A mystery that lasted half a semester</div>
+  <div class="chat-container">
+    <div class="chat-bubble sent" id="b1">
+      <div class="bubble-label">??? (Anonymous)</div>
+      <div class="bubble-cloud">Hey Misty</div>
+      <div class="bubble-date">First days of college</div>
+    </div>
+    <div class="chat-bubble received" id="b2">
+      <div class="bubble-label">Misti</div>
+      <div class="bubble-cloud">It is Misti. Not Misty. Who even is this?</div>
+    </div>
+    <div class="chat-bubble sent" id="b3">
+      <div class="bubble-label">??? (Anonymous)</div>
+      <div class="bubble-cloud">Figure it out. I dare you.</div>
+    </div>
+    <div class="chat-bubble received" id="b4">
+      <div class="bubble-label">Misti</div>
+      <div class="bubble-cloud">Okay mystery person... game on.</div>
+    </div>
+    <div class="chat-bubble sent" id="b5">
+      <div class="bubble-label">??? (Anonymous)</div>
+      <div class="bubble-cloud">Half a semester gone. Still no idea? I see you every single day.</div>
+    </div>
+    <div class="chat-bubble received" id="b6">
+      <div class="bubble-label">Misti</div>
+      <div class="bubble-cloud">This is so frustrating. HOW are you still anonymous.</div>
+    </div>
+    <div class="reveal-box" id="revealBox">
+      Then one day, at the practical lab —<br>
+      she looked up, and she just <em>knew</em>.<br><br>
+      No dramatic reveal. No confession needed.<br>
+      She figured it out herself, like she always does.<br><br>
+      And just like that, a friendship nobody expected became real.
+    </div>
+  </div>
+</section>
+
+<!-- S3 TIMELINE — images live entirely in HTML, never touched by JS -->
+<section class="section" id="s3">
+  <div class="timeline-header">
+    <div class="netflix-logo-text">The Year of <span>Misti</span></div>
+    <div class="timeline-year-tag">2025 — 2026</div>
+    <div class="timeline-tagline">A story told in twenty frames</div>
+  </div>
+  <div class="timeline-row-label">Early days — Sept to Jan</div>
+  <div class="photos-row">
+<div class="photo-card"><div class="photo-slot has-image"><img src="img1.jpg" alt="Memory 1"><div class="photo-overlay"><div class="photo-date">16 Sept 2025</div><div class="photo-memory">The Beginning — it all started here</div></div></div><div class="photo-num-badge">1</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img2.jpg" alt="Memory 2"><div class="photo-overlay"><div class="photo-date">5 Nov 2025</div><div class="photo-memory">Misti — the winner</div></div></div><div class="photo-num-badge">2</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img3.jpg" alt="Memory 3"><div class="photo-overlay"><div class="photo-date">12 Nov 2025</div><div class="photo-memory">Novesh&#39;s Birthday</div></div></div><div class="photo-num-badge">3</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img4.jpg" alt="Memory 4"><div class="photo-overlay"><div class="photo-date">18 Dec 2025</div><div class="photo-memory">Mall with BFF</div></div></div><div class="photo-num-badge">4</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img5.jpg" alt="Memory 5"><div class="photo-overlay"><div class="photo-date">26 Dec 2025</div><div class="photo-memory">Fun with BFF</div></div></div><div class="photo-num-badge">5</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img6.jpg" alt="Memory 6"><div class="photo-overlay"><div class="photo-date">4 Jan 2026</div><div class="photo-memory">Trip with BFF</div></div></div><div class="photo-num-badge">6</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img7.jpg" alt="Memory 7"><div class="photo-overlay"><div class="photo-date">Jan 2026</div><div class="photo-memory">DON Misti</div></div></div><div class="photo-num-badge">7</div></div>
+
+  </div>
+  <div class="timeline-row-label">Middle chapter — Feb to Mar</div>
+  <div class="photos-row">
+<div class="photo-card"><div class="photo-slot has-image"><img src="img8.jpg" alt="Memory 8"><div class="photo-overlay"><div class="photo-date">23 Jan 2026</div><div class="photo-memory">First CAD class</div></div></div><div class="photo-num-badge">8</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img9.jpg" alt="Memory 9"><div class="photo-overlay"><div class="photo-date">Feb 2026</div><div class="photo-memory">Dancing Misti</div></div></div><div class="photo-num-badge">9</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img10.jpg" alt="Memory 10"><div class="photo-overlay"><div class="photo-date">20 Feb 2026</div><div class="photo-memory">Breeze</div></div></div><div class="photo-num-badge">10</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img11.jpg" alt="Memory 11"><div class="photo-overlay"><div class="photo-date">21 Feb 2026</div><div class="photo-memory">Breeze Day</div></div></div><div class="photo-num-badge">11</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img12.jpg" alt="Memory 12"><div class="photo-overlay"><div class="photo-date">21 Feb 2026</div><div class="photo-memory">AI Summit</div></div></div><div class="photo-num-badge">12</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img13.jpg" alt="Memory 13"><div class="photo-overlay"><div class="photo-date">Feb 2026</div><div class="photo-memory">Energetic Misti</div></div></div><div class="photo-num-badge">13</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img14.jpg" alt="Memory 14"><div class="photo-overlay"><div class="photo-date">15 Mar 2026</div><div class="photo-memory">Misti with her umbrella assistant</div></div></div><div class="photo-num-badge">14</div></div>
+
+  </div>
+  <div class="timeline-row-label">Towards the end of year one — Apr</div>
+  <div class="photos-row">
+<div class="photo-card"><div class="photo-slot has-image"><img src="img15.jpg" alt="Memory 15"><div class="photo-overlay"><div class="photo-date">19 Mar 2026</div><div class="photo-memory">Misti slaying in style</div></div></div><div class="photo-num-badge">15</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img16.jpg" alt="Memory 16"><div class="photo-overlay"><div class="photo-date">4 Apr 2026</div><div class="photo-memory">Misti the Superhero — Project Hail Mary day</div></div></div><div class="photo-num-badge">16</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img17.jpg" alt="Memory 17"><div class="photo-overlay"><div class="photo-date">8 Apr 2026</div><div class="photo-memory">Rain Dance</div></div></div><div class="photo-num-badge">17</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img18.jpg" alt="Memory 18"><div class="photo-overlay"><div class="photo-date">10 Apr 2026</div><div class="photo-memory">Sleeping Misti</div></div></div><div class="photo-num-badge">18</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img19.jpg" alt="Memory 19"><div class="photo-overlay"><div class="photo-date">17 Apr 2026</div><div class="photo-memory">Misti — the studious student</div></div></div><div class="photo-num-badge">19</div></div>
+<div class="photo-card"><div class="photo-slot has-image"><img src="img20.jpg" alt="Memory 20"><div class="photo-overlay"><div class="photo-date">26 Apr 2026</div><div class="photo-memory">Misti in another world</div></div></div><div class="photo-num-badge">20</div></div>
+
+  </div>
+</section>
+
+<!-- S4 CONSTELLATION -->
+<section class="section" id="s4">
+  <div class="constellation-wrap">
+    <div class="section-title" style="color:white">Her Stars</div>
+    <div class="section-subtitle" style="color:rgba(255,255,255,0.35)">Every star holds a memory. Tap to read.</div>
+    <div class="sky-canvas" id="skyCanvas"></div>
+    <div class="star-popup" id="starPopup">
+      <div class="popup-date" id="popupDate"></div>
+      <div class="popup-memory" id="popupMemory"></div>
+      <button class="popup-close" onclick="closePopup()">close</button>
+    </div>
+    <div class="constellation-hint">tap any star above</div>
+  </div>
+</section>
+
+<!-- S5 -->
+<section class="section" id="s5">
+  <div class="world-title">Her Little World</div>
+  <div class="world-sub">Tap on Misti to hear what she has to say.</div>
+  <div class="dorm-wrap">
+    <div class="speech-bubble" id="speechBubble">Sone do na yr</div>
+    <svg class="scene-svg" viewBox="0 0 360 285" xmlns="http://www.w3.org/2000/svg">
+      <defs><clipPath id="mistiClip"><ellipse cx="132" cy="185" rx="34" ry="37"/></clipPath><pattern id="chk" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#c87030" opacity="0.45"/><rect x="3" y="3" width="3" height="3" fill="#c87030" opacity="0.45"/></pattern></defs>
+      <rect width="360" height="285" fill="#fdf9f2" rx="12"/><rect width="360" height="168" fill="#ede6f8"/><rect y="165" width="360" height="120" fill="#e5ddc8"/><rect y="163" width="360" height="5" fill="#d4c9b0"/>
+      <rect x="18" y="18" width="64" height="55" fill="#cce8e6" rx="5" stroke="#aad0ce" stroke-width="1"/><line x1="50" y1="18" x2="50" y2="73" stroke="#aad0ce" stroke-width="1"/><line x1="18" y1="46" x2="82" y2="46" stroke="#aad0ce" stroke-width="1"/>
+      <path d="M100 30 Q180 17 265 30" fill="none" stroke="#c9a84c" stroke-width="0.7" stroke-dasharray="3,6" opacity="0.55"/>
+      <circle cx="112" cy="28" r="3" fill="#ffe899" opacity="0.88"/><circle cx="135" cy="22" r="3" fill="#ffe899" opacity="0.88"/><circle cx="160" cy="18" r="3" fill="#ffe899" opacity="0.88"/><circle cx="185" cy="17" r="3" fill="#ffe899" opacity="0.88"/><circle cx="210" cy="19" r="3" fill="#ffe899" opacity="0.88"/><circle cx="235" cy="22" r="3" fill="#ffe899" opacity="0.88"/><circle cx="257" cy="28" r="3" fill="#ffe899" opacity="0.88"/>
+      <text x="306" y="78" text-anchor="middle" font-family="Georgia,serif" font-size="5.5" fill="#6b5a9e">10 SGPA Topper</text>
+      <rect x="65" y="142" width="228" height="118" fill="#c8bde8" rx="12" stroke="#b0a2d8" stroke-width="1"/><rect x="65" y="142" width="228" height="28" fill="#b0a2d8" rx="8"/><rect x="70" y="168" width="218" height="88" fill="#e8e2f5" rx="6"/><rect x="78" y="172" width="65" height="38" fill="white" rx="10" stroke="#ddd5f0" stroke-width="0.8"/><rect x="74" y="207" width="210" height="42" fill="#a898d8" rx="8" opacity="0.75"/>
+      <ellipse cx="170" cy="214" rx="55" ry="16" fill="#b8a8d5" opacity="0.35"/>
+      <image href="misti_face.png" x="96" y="143" width="72" height="80" clip-path="url(#mistiClip)" style="border-radius:50%"/>
+      <rect x="157" y="197" width="25" height="16" fill="#e8734a" rx="2" transform="rotate(-10 169 205)"/><rect x="177" y="194" width="23" height="15" fill="#5ba5a0" rx="2" transform="rotate(7 188 201)"/><rect x="194" y="197" width="21" height="15" fill="#9b87c4" rx="2" transform="rotate(-6 204 204)"/><rect x="210" y="194" width="25" height="16" fill="#e8a84c" rx="2" transform="rotate(11 222 202)"/><rect x="161" y="211" width="23" height="14" fill="#6b5a9e" rx="2" transform="rotate(-4 172 218)"/><rect x="180" y="209" width="21" height="15" fill="#3a7a76" rx="2" transform="rotate(8 190 216)"/><rect x="198" y="212" width="25" height="14" fill="#c04a4a" rx="2" transform="rotate(-8 210 219)"/><rect x="216" y="208" width="21" height="15" fill="#4a8a3a" rx="2" transform="rotate(5 226 215)"/><rect x="165" y="223" width="23" height="13" fill="#c9a84c" rx="2" transform="rotate(-3 176 229)"/><rect x="186" y="222" width="22" height="14" fill="#7a4aa0" rx="2" transform="rotate(6 197 229)"/>
+      <!-- Ekansh -->
+      <rect x="17" y="222" width="10" height="38" fill="#4a78c8" rx="3"/><rect x="30" y="222" width="10" height="38" fill="#4a78c8" rx="3"/><ellipse cx="22" cy="261" rx="8" ry="4.5" fill="#7a4a20"/><ellipse cx="35" cy="261" rx="8" ry="4.5" fill="#7a4a20"/><rect x="15" y="220" width="26" height="4" fill="#5a3810" rx="1"/><rect x="13" y="188" width="30" height="34" fill="#e0b888" rx="4"/><rect x="13" y="188" width="30" height="34" fill="url(#chk)" rx="4" opacity="0.65"/><rect x="4" y="192" width="10" height="24" fill="#e0b888" rx="3"/><rect x="42" y="192" width="10" height="24" fill="#e0b888" rx="3"/><circle cx="9" cy="218" r="5" fill="#f5c5a0"/><circle cx="47" cy="218" r="5" fill="#f5c5a0"/><rect x="22" y="180" width="12" height="10" fill="#f5c5a0" rx="2"/><ellipse cx="28" cy="168" rx="17" ry="18" fill="#f5c5a0"/><ellipse cx="11" cy="169" rx="4.5" ry="5.5" fill="#f0b898"/><ellipse cx="45" cy="169" rx="4.5" ry="5.5" fill="#f0b898"/><ellipse cx="28" cy="152" rx="14" ry="8" fill="#8a5220"/><ellipse cx="18" cy="156" rx="8" ry="6" fill="#9a5e28"/><ellipse cx="38" cy="156" rx="8" ry="6" fill="#9a5e28"/><path d="M13 162 Q28 148 43 162 Q42 155 28 149 Q14 155 13 162Z" fill="#7a4a18"/><rect x="13" y="163" width="13" height="10" fill="rgba(210,235,245,0.3)" stroke="#251508" stroke-width="1.3" rx="2"/><rect x="29" y="163" width="13" height="10" fill="rgba(210,235,245,0.3)" stroke="#251508" stroke-width="1.3" rx="2"/><line x1="26" y1="168" x2="29" y2="168" stroke="#251508" stroke-width="1.1"/><circle cx="19" cy="168" r="3.5" fill="#3a1e08"/><circle cx="35" cy="168" r="3.5" fill="#3a1e08"/><circle cx="20" cy="167" r="1.2" fill="white"/><circle cx="36" cy="167" r="1.2" fill="white"/><path d="M20 177 Q28 184 36 177" fill="none" stroke="#b06040" stroke-width="1.4" stroke-linecap="round"/><text x="28" y="278" text-anchor="middle" font-family="Georgia,serif" font-size="7.5" fill="#5a5270">Ekansh</text>
+      <!-- Novesh -->
+      <rect x="320" y="222" width="10" height="38" fill="#4a78c8" rx="3"/><rect x="333" y="222" width="10" height="38" fill="#4a78c8" rx="3"/><ellipse cx="325" cy="261" rx="8" ry="4.5" fill="#7a4a20"/><ellipse cx="338" cy="261" rx="8" ry="4.5" fill="#7a4a20"/><rect x="318" y="220" width="26" height="4" fill="#5a3810" rx="1"/><rect x="316" y="188" width="30" height="34" fill="#80c8c0" rx="4"/><rect x="307" y="192" width="10" height="24" fill="#80c8c0" rx="3"/><rect x="345" y="192" width="10" height="24" fill="#80c8c0" rx="3"/><circle cx="312" cy="218" r="5" fill="#f5c5a0"/><circle cx="350" cy="218" r="5" fill="#f5c5a0"/><rect x="325" y="180" width="12" height="10" fill="#f5c5a0" rx="2"/><ellipse cx="331" cy="168" rx="17" ry="18" fill="#f5c5a0"/><ellipse cx="314" cy="169" rx="4.5" ry="5.5" fill="#f0b898"/><ellipse cx="348" cy="169" rx="4.5" ry="5.5" fill="#f0b898"/><ellipse cx="331" cy="152" rx="14" ry="8" fill="#3a2210"/><ellipse cx="321" cy="156" rx="8" ry="6" fill="#4a2e18"/><ellipse cx="341" cy="156" rx="8" ry="6" fill="#4a2e18"/><path d="M316 162 Q331 148 346 162 Q345 155 331 149 Q317 155 316 162Z" fill="#2e1a08"/><circle cx="322" cy="168" r="3.5" fill="#3a1e08"/><circle cx="338" cy="168" r="3.5" fill="#3a1e08"/><circle cx="323" cy="167" r="1.2" fill="white"/><circle cx="339" cy="167" r="1.2" fill="white"/><ellipse cx="331" cy="179" rx="4.5" ry="3.5" fill="#b06040"/><text x="331" y="278" text-anchor="middle" font-family="Georgia,serif" font-size="7.5" fill="#5a5270">Novesh</text>
+      <rect id="mistiTap" x="98" y="148" width="70" height="80" fill="transparent" style="cursor:pointer"/>
+    </svg>
+    <div class="tap-hint">Tap on Misti to hear what she has to say</div>
+  </div>
+</section>
+
+<!-- S6 -->
+<section class="section" id="s6">
+  <div class="credits-wrap">
+    <div class="credits-directed">Directed by</div>
+    <div class="credits-by">God</div>
+    <div class="credits-year">2025 &#8212; 2026</div>
+    <div class="credits-divider"></div>
+    <div class="credits-cast-title">Cast</div>
+    <div class="cast-list" id="castList">
+      <div class="cast-item"><span class="cast-name">Misti</span><span class="cast-role">The Star</span></div>
+      <div class="cast-item"><span class="cast-name">Ekansh</span><span class="cast-role">The Anonymous One</span></div>
+      <div class="cast-item"><span class="cast-name">Novesh</span><span class="cast-role">The Hero</span></div>
+      <div class="cast-item"><span class="cast-name">Harshit</span><span class="cast-role"></span></div>
+      <div class="cast-item"><span class="cast-name">Naina</span><span class="cast-role"></span></div>
+      <div class="cast-item"><span class="cast-name">Paawan</span><span class="cast-role"></span></div>
+      <div class="cast-item"><span class="cast-name">Shefali</span><span class="cast-role"></span></div>
+      <div class="cast-item"><span class="cast-name">Medhansh</span><span class="cast-role"></span></div>
+      <div class="cast-item"><span class="cast-name">Parth</span><span class="cast-role"></span></div>
+    </div>
+    <div class="cast-many">...and many more</div>
+    <div class="final-line" id="finalLine">Okay ab so ja</div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
